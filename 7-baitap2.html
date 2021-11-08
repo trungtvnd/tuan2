@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    if (confirm('Ban có muốn đổi nhiệt độ từ C sang F không') == true) {
+        let c = prompt('Nhập vào độ C');
+        let cal = parseInt(c);
+        let f = (cal * 9 / 5 + 32);
+        document.write('Độ C là:' + ' ' + cal + '<br>')
+        document.write('Độ F là:' + ' ' + f + '<br>')
+    }
+    else {
+        document.write('Exit')
+    }
+
+</script>
+</body>
+</html>
