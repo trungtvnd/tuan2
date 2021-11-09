@@ -10,7 +10,8 @@
             text-align: center;
 
         }
-        tr,th,td {
+
+        tr, th, td {
             border: 1px solid;
             border-collapse: collapse;
 
@@ -31,10 +32,10 @@
             <td><label><input type="text" id="amount" name="amount"></label></td>
             <td><label>
                 <select id="1">
-                    <option  name="1" value="1">Vietnam Dong(VND)</option>
-                    <option  name="1" value="2">America Dollar(USD)</option>
-                    <option  name="1" value="3">Great Britan (GPB)</option>
-                    <option  name="1" value="4">Canada Dollar(CND)</option>
+                    <option name="1" value="1">Vietnam Dong(VND)</option>
+                    <option name="1" value="2">America Dollar(USD)</option>
+                    <option name="1" value="3">Great Britan (GPB)</option>
+                    <option name="1" value="4">Canada Dollar(CND)</option>
                 </select>
             </label></td>
             <td><label>
@@ -45,17 +46,14 @@
                     <option id="f1" value="f1">Vietnam Dong (VND)</option>
                 </select>
             </label></td>
-            <td colspan="2"><button type="button" onclick="ExchangeRate()">Convert</button></td>
+            <td colspan="2">
+                <button type="button" onclick="ExchangeRate()">Convert</button>
+            </td>
 
         </tr>
     </table>
 </form>
-<!--<script>-->
-<!--    function ExchangeRate() {-->
-<!--        let a = parseInt(document.getElementById("amount").value)-->
-<!--        alert(a * 1.5)-->
-<!--    }-->
-<!--</script>-->
+
 <br><br><br><br>
 <table>
     <tr>
@@ -65,7 +63,7 @@
         <th><b>GPB(3)</b></th>
         <th><b>CND(4)</b></th>
     </tr>
-    <tr >
+    <tr>
         <td>VND(1)</td>
         <td><label><input type="text" value="1" id="11"></label></td>
         <td><label><input type="text" value="23000" id="12"></label></td>
@@ -94,7 +92,7 @@
         <td><label><input type="text" value="1.9444444" id="43"></label></td>
         <td><label><input type="text" value="1" id="44"></label></td>
     </tr>
-        
+
 </table>
 <script src="7-exchangerate.js"></script>
 </body>
