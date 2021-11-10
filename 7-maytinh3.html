@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>CACULATOR</title>
 </head>
 <body>
-$END$
+<h2><strong>CACULATOR</strong></h2>
+<!--Để ý hàm a = eval('15' + '15'-->
+<table>
+    <tr>
+        <td style="width: 90%" colspan="4"><label><input type="text" value="" id="demo" onchange="display2()" ></label></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" class="number"  onclick="display2()" value="1"></td>
+        <td><input type="button" class="number" value="2"></td>
+        <td><input type="button" value="3"></td>
+        <td><input type="button" value="+"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4"></td>
+        <td><input type="button" value="5"></td>
+        <td><input type="button" value="6"></td>
+        <td><input type="button" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7"></td>
+        <td><input type="button" value="8"></td>
+        <td><input type="button" value="9"></td>
+        <td><input type="button" value="*"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="0"></td>
+        <td><input type="button" value="C"></td>
+        <td><input type="button" value="="></td>
+        <td><input type="button" value="/"></td>
+    </tr>
+</table>
+<script>
+    function display2() {
+      document.getElementsByClassName('number').value
+    }
+</script>
 </body>
 </html>

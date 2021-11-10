@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!--14<span style="font-size: 8px">1</span>-->
+<!--<br>-->
+<!--14<sub>1</sub>-->
+
+<!--<select id="test" onchange="display()">-->
+<!--  <option value="hello">AAAAAAA</option>-->
+<!--  <option value="hi">BBBBBB</option>-->
+<!--  <option value="bye">CCCCCCC</option>-->
+<!--  <option value="helloworld">DDDDĐ</option>-->
+<!--</select>-->
+
+<!--<div id="container" style="width: 100px; height: 100px"></div>-->
+<div style="width: 500px; height: 500px">
+  <input type="text" value="" id="demo" oninput="display2()" >
+  <p id="result"></p>
+</div>
+
+<script>
+  function display() {
+    // let string = prompt()
+    // let selectOption = document.getElementById("test").value
+    alert(document.getElementById("test").value)
+  }
+
+
+
+  function display2() {
+    document.getElementById("result").innerText = document.getElementById("demo").value
+  }
+</script>
 </body>
 </html>

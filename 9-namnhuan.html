@@ -6,25 +6,26 @@
 </head>
 <body>
 <script>
-    if (confirm("Bạn có muốn kiểm tra năm nhuận không?")){
         let leepYear = +prompt('Nhap vao một năm bất kỳ')
+        let confirm = false
+
+
+
         if (leepYear % 4 === 0) {
             if (leepYear % 100 === 0) {
                 if (leepYear % 400 === 0) {
-                    alert(leepYear + ' ' + " là năm nhuận ")
+                    confirm = true
                 }
-                else {
-                    alert(leepYear + ' ' + 'không là năm nhuận')
-                }
-            }
-            else {
-                alert(leepYear + " " + "không là năm nhuận")
             }
         }
         else {
-            alert(leepYear + ' ' + "không là năm nhuận")
-        }
+            confirm = true
 
+    }
+    if (confirm) {
+        alert(leepYear + "Là năm nhuận")
+    } else {
+        alert(leepYear + " Không là năm nhuận")
     }
 
 
