@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    if (confirm("Bạn có muốn kiểm tra năm nhuận không?")){
+        let leepYear = +prompt('Nhap vao một năm bất kỳ')
+        if (leepYear % 4 === 0) {
+            if (leepYear % 100 === 0) {
+                if (leepYear % 400 === 0) {
+                    alert(leepYear + ' ' + " là năm nhuận ")
+                }
+                else {
+                    alert(leepYear + ' ' + 'không là năm nhuận')
+                }
+            }
+            else {
+                alert(leepYear + " " + "không là năm nhuận")
+            }
+        }
+        else {
+            alert(leepYear + ' ' + "không là năm nhuận")
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
