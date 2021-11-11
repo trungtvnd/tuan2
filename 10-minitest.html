@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 1-->
+
+<!--Câu lệnh để hiển thị một hộp thoại là prompt lấy thông tin từ người dùng, gồm có hai tham số truyền vào là nội dung-->
+<!--thông báo và giá trị ban đầu-->
+<!--<script>-->
+<!--    prompt('Tên của bạn', 'Trần Việt Trung')-->
+<!--</script>-->
+
+<!--Bai 2-->
+<!--Câu lệnh để nhận giá trị từ một hộp thoại là hành động gán giá trị của hộp thoại cho một biến-->
+<!--<script>-->
+
+<!--    let a = prompt('Nhập giá trị của số a')-->
+<!--    alert(a ** 2)-->
+<!--</script>-->
+
+<!--Bai 3-->
+<!--Câu lệnh nhận giá trị từ một ô input là thực hiện lấy giá trị của ô input đó và trả ra kết quả-->
+<!--<label><input type="text" id="a"></label>-->
+<!--<label><input type="text" id="b"></label>-->
+<!--<label><input type="button" value="caculator" onclick="caculator()"></label>-->
+<!--<p id="show"></p>-->
+<!--<script>-->
+<!--    function caculator() {-->
+<!--        let a = document.getElementById('a').value-->
+<!--        let b = document.getElementById('b').value-->
+<!--        let total = a * b-->
+<!--        document.getElementById('show').innerHTML = '<h2>a * b =</h2>' + total-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 4-->
+<!--Câu a-->
+<!--<label><input type="text" id="a"></label>-->
+<!--<label><input type="button" value="Tính" id="b" onclick="tinh()"></label>-->
+<!--<p id="show"></p>-->
+<!--<script>-->
+<!--    function tinh() {-->
+<!--        let a = document.getElementById('a').value-->
+<!--        let area = a ** 2-->
+<!--        let primeter = a * 4-->
+<!--        document.getElementById('show').innerText = 'Chu vi là: ' + primeter + ' ' + 'và' + '  ' + 'Dien tich la: ' + ' ' + area-->
+<!--    }-->
+<!--</script>-->
+
+<!--Câu b-->
+<!--<label><input type="text" id="a"></label>-->
+<!--<label><input type="text" id="b"></label>-->
+<!--<label><input type="button" id="button" value="tinh()"></label>-->
+<!--<p id="show"></p>-->
+<!--<script>-->
+<!--    let a = document.getElementById('a').value-->
+<!--    let b = document.getElementById('b').value-->
+<!--    let c = a ** 2-->
+<!--    let d = Math.pow(a, b)-->
+<!--    document.getElementById('show').innerText = 'ket qua la' + c + d-->
+<!--</script>-->
+
+<!--câu c-->
+<!--<label><input type="text" id="a"></label>-->
+<!--<label><input type="text" id="b"></label>-->
+<!--<p id="show"></p>-->
+<!--<script>-->
+
+<!--</script>-->
+
+<!--Câu d-->
+<!--<label><input type="text" id="a"></label>-->
+
+<!--<label><input type="button" value="nam" onclick="nam()"></label>-->
+<!--<p id="show"></p>-->
+
+<!--<script>-->
+<!--    function nam() {-->
+<!--        let a = document.getElementById('a').value-->
+<!--        let b-->
+<!--        if (a % 100 === 0) {-->
+<!--            b = a / 100 + 1-->
+<!--            document.getElementById('show').innerText = 'the ky la' + b-->
+<!--        } else {-->
+<!--            b = a / 100 + 1-->
+<!--            document.getElementById('show').innerText = 'the ky la' + b-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+cau e
+<label><input type="text" id="a"></label>
+<label><input type="text" id="b"></label>
+<label><input type="text" id="c"></label>
+<label><input type="button" id="tg1" value="checktamgiac" onclick="tamgiac()"></label>
+<label><input type="button" id="tg2" value="checktamgiacdeu" onclick="tamgiacdeu()"></label>
+<label><input type="button" id="tg3" value="checktamgiaccan" onclick="tamgiaccan()"></label>
+<label><input type="button" id="tg4" value="checktamgiacvuong" onclick="tamggiacvuong()"></label>
+
+<script>
+    let a = parseInt(document.getElementById('a').value)
+    let b = +document.getElementById('b').value
+    let c = +document.getElementById('c').value
+    function tamgiac() {
+        if (a < 0 || b < 0 || c < 0) {
+            alert('Cạnh không được nhỏ hơn 0')
+        }else if (a + b > c && a + c > b && b + c > a) {
+            alert('Đây là 3 canh của một tam giác')
+        }else {
+            alert('Đây k phải là canh của tam giác')
+        }
+    }
+    function tamgiacdeu() {
+        if (a < 0 || b < 0 || c < 0) {
+            alert('Cạnh không được nhỏ hơn 0')
+        }else if (a === b && a === c) {
+            alert('Đây là ba cạnh tam giác đều')
+
+        }else {
+            alert('Đây không phải ba canh tam giác đều')
+        }
+    }
+    function tamgiaccan() {
+        if (a < 0 || b < 0 || c < 0) {
+            alert('Cạnh không được nhỏ hơn 0')
+        } else if (a ===b || b === c || a === c){
+            alert("Đây là 3 canh của tam giac can")
+        }else {
+            alert('Đây không phải ba cạnh tam giác cân')
+        }
+    }
+    function tamggiacvuong(){
+        if (a < 0 || b < 0 || c < 0) {
+            alert('Cạnh không được nhỏ hơn 0')
+        }else if (a*a + b*b === c*c || a*a + c*c === b*b || b*b + c*c === a*a){
+            alert('Đây là 3 canh tam giác vuông')
+        }else {
+            alert('Đây không phải 3 canh tam giác vuông')
+        }
+        }
+</script>
+</body>
+</html>
