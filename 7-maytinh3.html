@@ -9,37 +9,37 @@
 <!--Để ý hàm a = eval('15' + '15'-->
 <table>
     <tr>
-        <td style="width: 90%" colspan="4"><label><input type="text" value="" id="demo" onchange="display2()" ></label></td>
+        <td style="width: 90%" colspan="4"><label><input type="text" value="" id="demo" onchange="display2(value)" ></label></td>
 
     </tr>
     <tr>
-        <td><input type="button" class="number"  onclick="display2()" value="1"></td>
-        <td><input type="button" class="number" value="2"></td>
-        <td><input type="button" value="3"></td>
-        <td><input type="button" value="+"></td>
+        <td><input type="button"  onclick="display2(this.value)" value="1"></td>
+        <td><input type="button"  onclick="display2(this.value)" value="2"></td>
+        <td><input type="button" value="3" onclick="display2(this.value)"></td>
+        <td><input type="button" value="+" onclick="display2(this.value)"></td>
     </tr>
     <tr>
-        <td><input type="button" value="4"></td>
-        <td><input type="button" value="5"></td>
-        <td><input type="button" value="6"></td>
-        <td><input type="button" value="-"></td>
+        <td><input type="button" value="4" onclick="display2(this.value)"></td>
+        <td><input type="button" value="5" onclick="display2(this.value)"></td>
+        <td><input type="button" value="6" onclick="display2(this.value)"></td>
+        <td><input type="button" value="-" onclick="display2(this.value)"></td>
     </tr>
     <tr>
-        <td><input type="button" value="7"></td>
-        <td><input type="button" value="8"></td>
-        <td><input type="button" value="9"></td>
-        <td><input type="button" value="*"></td>
+        <td><input type="button" value="7" onclick="display2(this.value)"></td>
+        <td><input type="button" value="8" onclick="display2(this.value)"></td>
+        <td><input type="button" value="9" onclick="display2(this.value)"></td>
+        <td><input type="button" value="*" onclick="display2(this.value)"></td>
     </tr>
     <tr>
-        <td><input type="button" value="0"></td>
-        <td><input type="button" value="C"></td>
-        <td><input type="button" value="="></td>
-        <td><input type="button" value="/"></td>
+        <td><input type="button" value="0" onclick="display2(this.value)"></td>
+        <td><input type="button" value="C" onclick="display2(this.value)"></td>
+        <td><input type="button" value="=" onclick="display2(this.value)"></td>
+        <td><input type="button" value="/" onclick="display2(this.value)"></td>
     </tr>
 </table>
 <script>
-    function display2() {
-      document.getElementsByClassName('number').value
+    function display2(value) {
+      value = document.get
     }
 </script>
 </body>
