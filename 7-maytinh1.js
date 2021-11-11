@@ -3,7 +3,9 @@
     let number1 = parseFloat(document.getElementById('number1').value)
     let number2 = parseFloat(document.getElementById('number2').value)
     let sum = number1 + number2
-    alert('Giá trị bằng: ' + ' ' + sum )
+    // alert('Giá trị bằng: ' + ' ' + sum )
+        document.getElementById('result').innerText = "Result"  + sum
+
 }
     function Subtraction() {
     let number1 = parseFloat(document.getElementById('number1').value)
