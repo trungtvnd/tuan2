@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CẤU TRÚC ĐIỀU KIỆN 2</title>
+</head>
+<body>
+<!--Bài 1: Chuyển từ độ C sang độ F.-->
+
+<!--°C  x  9/5 + 32 = °F-->
+
+<!--<script>-->
+<!--    let celsius = +(prompt('Input Celsius'))-->
+<!--    let fahrenheit = (celsius * 9 / 5) + 32-->
+<!--    alert(fahrenheit)-->
+<!--</script>-->
+
+<!--Bài 2: Chuyển từ mét sang feet:-->
+
+<!--ft =m * 3.2808-->
+
+<!--<script>-->
+<!--    let meter = parseFloat(prompt('Input meter'))-->
+<!--    let feet = meter * 3.2808-->
+<!--    alert(feet)-->
+<!--</script>-->
+
+
+<!--Bai 3-->
+<!--<script>-->
+<!--    let a = +prompt('input canh a')-->
+<!--    let areaSquare = a ** 2-->
+<!--    alert(areaSquare)-->
+<!--</script>-->
+
+
+<!--Bai 4-->
+
+<!--<script>-->
+<!--    let a = +prompt('input canh a')-->
+<!--    let b = +prompt('input canh b')-->
+
+<!--    let rectangular = a * b-->
+<!--    alert(rectangular)-->
+<!--</script>-->
+
+
+<!--Bai 5-->
+<!--<script>-->
+<!--    let a = +prompt('input canh a')-->
+<!--    let b = +prompt('input canh b')-->
+
+<!--    let triangle = a * b * 0.5-->
+<!--    alert(triangle)-->
+<!--</script>-->
+
+
+<!--Bai 6 bai 7-->
+<!--<script>-->
+<!--    //giải phương trình bậc 2: ax2 + bx + c = 0-->
+
+<!--    let number1 = +prompt('Nhap so thu nhat: ');-->
+<!--    let number2 = +prompt('Nhap so thu hai: ');-->
+<!--    let number3 = +prompt('Nhap so thu ba: ');-->
+<!--    let delta = (number2 ** 2) - (4 * number1 * number3); //delta = b2 - 4ac-->
+<!--    if (number1 === 0) { //Math.pow(cơ số, số mũ): lũy thừa của số-->
+<!--        if (number2 === 0) {-->
+<!--            if (number3 === 0){-->
+<!--                alert('Phuong trinh vo so nghiem');-->
+<!--            } else {-->
+<!--                alert('Phuong trinh vo nghiem');-->
+<!--            }-->
+<!--        } else {-->
+<!--            let x = - (number3 / number2).toFixed(4); //đưa phương trình về pt bậc nhất: nghiệm duy nhất là: -c/b-->
+<!--            alert('Phuong trinh co nghiem la: ' + x);-->
+<!--        }-->
+<!--    }-->
+<!--    else if (delta > 0) { //Math.sqrt(number): lấy căn bậc 2 của number-->
+<!--        let x1 = ((- number2 + Math.sqrt(delta)) / (2 * number1)).toFixed(4); //(-b + căn delta) / 2a-->
+<!--        let x2 = ((- number2 - Math.sqrt(delta)) / (2 * number1)).toFixed(4); //(-b - căn delta) / 2a-->
+<!--        alert('Phuong trinh co 2 nghiem la: ' + x1 + ' va  ' + x2);-->
+<!--    }-->
+<!--    else if (delta === 0) {-->
+<!--        let x = ((- number2) / (2 * number1)).toFixed(4); //pt có nghiệm duy nhất: -b / 2a-->
+<!--        alert('Phuong trinh co nghiem kep la: ' + x);-->
+<!--    } else {-->
+<!--        alert('Phuong trinh vo nghiem');-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--bai 8-->
+
+<!--<script>-->
+<!--    let age = +prompt('Input age')-->
+<!--    if (age > 0 && age <= 120) {-->
+<!--        alert('Đây là tuổi của con người')-->
+<!--    } else {-->
+<!--        alert('Đây k phải tuổi con người')-->
+<!--    }-->
+<!--    -->
+<!--</script>-->
+
+<!--bai 9-->
+<!--<script>-->
+<!--    let so1 = parseInt(prompt('A= '));-->
+<!--    let so2 = parseInt(prompt('B= '));-->
+<!--    let so3 = parseInt(prompt('C= '));-->
+<!--    if (so1 <= 0 || so3 <= 0 || so2 <= 0) {-->
+<!--        alert('Canh tam giac khong duoc nho hon 0');-->
+<!--    } else if ((so1 + so2) > so3 && (so1 + so3) > so2 && (so3 + so2) > so1) {-->
+<!--        alert("Đây là ba canh của tam gíac");-->
+<!--    }else {-->
+<!--        alert('Đây k phải ba cạnh của tam giác');-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 10-->
+<!--<script>-->
+<!--    let under1000 = parseFloat(prompt('Input amount under 1000kwh'))-->
+<!--    let higher1000 = parseFloat(prompt('Input amount higher 1000kwh'))-->
+<!--    let higher1500 = parseFloat(prompt('Input amount higher 1500kwh'))-->
+<!--    let price_under1000 = 15000-->
+<!--    let price_higher1000 = 20000-->
+<!--    let price_higher1500 = 25000-->
+<!--    let total = under1000 * price_under1000 + higher1000 * price_higher1000 + higher1500 * price_higher1500-->
+<!--    alert(total)-->
+<!--</script>-->
+
+
+Bai 11
+<!--<script>-->
+<!--    let salary = +prompt('Input your salary')-->
+<!--    let taxIncome = 0-->
+<!--    if (salary >= 50000000) {-->
+<!--        taxIncome = (salary - 50000000) * 0.4 + (20000000) * 0.3 + (10000000) * 0.2 + 11000000 * 0.1-->
+<!--        alert(taxIncome)-->
+<!--    } else if (salary >= 30000000) {-->
+<!--        taxIncome =  (salary - 30000000) * 0.3 + (10000000) * 0.2 + 11000000 * 0.1-->
+<!--        alert(taxIncome)-->
+<!--    }else if (salary >= 20000000) {-->
+<!--        taxIncome = (salary - 20000000) + 11000000 * 0.1-->
+<!--        alert(taxIncome)-->
+<!--    }else if (salary >= 9000000){-->
+<!--        taxIncome = (salary - 9000000) * 0.1-->
+<!--        alert(taxIncome)-->
+<!--    }else {-->
+<!--        alert(taxIncome)-->
+<!--    }-->
+<!--</script>-->
+
+Bai 12
+<script>
+    let amount = +prompt('input amount')
+    let rate = 0.1
+    rateMoney = Math.pow(amount * rate, 12)
+    alert(rateMoney)
+</script>
+
+
+
+</body>
+</html>
