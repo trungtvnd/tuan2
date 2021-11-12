@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 70%;
+        }
+        tr, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<!--<p id="bangcuuchuong"></p>-->
+<h2><b>BẢNG CỬU CHƯƠNG</b></h2>
+<script>
+    let bangcuuchuong;
+    bangcuuchuong = "<table>";
+    for (let i = 2; i <= 9; i++ ) {
+        bangcuuchuong = bangcuuchuong + "<tr>";
+        for (let j = 1; j <= 9; j++) {
+            bangcuuchuong = bangcuuchuong + "<td>" + i + " x " + j + " = " + i * j + "</td>";
+        }
+        bangcuuchuong =bangcuuchuong + "</tr>";
+    }
+    bangcuuchuong = bangcuuchuong + "</table>";
+   document.write(bangcuuchuong)
+</script>
+</body>
+</html>
