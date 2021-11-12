@@ -5,26 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<h2 id="nguyento"></h2>
 <script>
-    let number = 20
-    let count = 0
-    let N = 2
-    while (count < 20) {
-        let flag = true;
-        let n = +prompt('Input so n')
-        while (N < (n-1)) {
-            if (n % N === 0) {
-                flag = false
-            }else {
-                flag = true
-            }
+    let flag = true
+   let N = 2
+    for (let count = 1; count <= 20; ) {
+        for (let i = 2 ; i <= Math.floor(Math.sqrt(N)); i++) {
+            if (N % i === 0) {
+                flag = false;
+                break;
+                }
         }
-        n++
-
-
-
-    count++
+        if (flag){
+            console.log(N)
+            count ++
+        }
+        flag = true
+        N++
     }
+
 </script>
 </body>
 </html>
