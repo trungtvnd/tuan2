@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bai 1
+    // let i = 0;
+    // let j = 1;
+    // let k ;
+    // for(let count = 0; count <= 20; count++) {
+    //     console.log(i)
+    //     k = i + j
+    //     i = j
+    //     j = k
+    // }
+
+    // Bai 2
+    // let n = +prompt('Input 1 so nguyen duong')
+    // let giai_thua = 1
+    //
+    // for (let i = 1; i < n; i ++){
+    //     giai_thua *= i
+    // }
+    //  document.write(giai_thua)
+
+    // Bai 3
+    // Loai 1
+    // let N = +prompt('Nhap gia tri N')
+    //
+    // for (let i = 0; i < N; i++) {
+    //
+    //
+    //     for (let j = 0; j <= i; j++) {
+    //         document.writeln('*')
+    //     }
+    //     document.writeln("<br/>")
+    // }
+
+    // loai 2
+    // let N = +prompt('Nhap gia tri N')
+    //
+    // for (let i = 0; i <= N; i++){
+    //     for (let k = N; k >= i; k --) {
+    //         document.writeln('*')
+    //     }
+    //     document.write('<br/>')
+    // }
+
+    // Loai 3
+    // let N = +prompt('Nhap gia tri N')
+    //
+    // for (let i = 0; i < N; i++) {
+    //     for (let k = N; k >= i; k--) {
+    //         document.writeln('&nbsp;&nbsp;')
+    //     }
+    //     for (let j = 0; j <= i; j++) {
+    //         document.writeln('*')
+    //     }
+    //     document.writeln("<br/>")
+    // }
+    // Loai 4
+    // let N = +prompt('Nhap gia tri N')
+    //
+    // for (let i = 0; i <= N; i ++) {
+    //     for (let k = 0; k <= i; k ++) {
+    //         document.writeln('&nbsp;&nbsp;')
+    //     }
+    //     for( let k = N; k >= i; k--) {
+    //         document.writeln('*')
+    //     }
+    //     document.writeln("<br/>")
+    // }
+    // Bai 4
+    //     let N = +prompt('Nhập cạnh ngắn')
+    //     let M = +prompt('Nhập cạnh dài')
+    //     for(let i = 0; i <= N; i++) {
+    //
+    //         for (let j = 0; j <= M; j++) {
+    //             if (i === 0 || j === 0 || i === N || j === M ){
+    //                 document.write('*')
+    //             }else {
+    //                 document.write('&nbsp;&nbsp;')
+    //             }
+    //
+    //         }
+    //         document.write('<br/>')
+    //     }
+
+    // Bai 5 lam ở bài trước rồi
+    // Bai 6
+    for (let i = 0; i <= 20; i++) {
+        for (let j = 0; j <= 56; j++) {
+            if (i === 4 && j === 28 || i === 20 && j === 28) {
+                document.write('*')
+            } else if (i === 3 && j === 25 || i === 3 && j === 31) {
+                document.write('*')
+            } else if (i === 2 && j === 21 || i === 2 && j === 35) {
+                document.write('*')
+            } else if (i === 1 && j === 18 || i === 1 && j === 38) {
+                document.write('*')
+            } else if (i === 0 && j === 14 || i === 0 && j === 42) {
+                document.write('*')
+            } else if (i === 0 && j === 11 || i === 0 && j === 45) {
+                document.write('*')
+            } else if (i === 0 && j === 8 || i === 0 && j === 48) {
+                document.write('*')
+            }else if (i === 1 && j === 5 || i === 1 && j === 51) {
+                document.write('*')
+            }else if (i === 2 && j === 4 || i === 2 && j === 52) {
+                document.write('*')
+            }else if (i === 3 && j === 3 || i === 3 && j === 53) {
+                document.write('*')
+            }else if (i === 4 && j === 2 || i === 4 && j === 54) {
+                document.write('*')
+            }else if (i === 5 && j === 1 || i === 5 && j === 55) {
+                document.write('*')
+            }else if (i === 6 && j === 1 || i === 6 && j === 55) {
+                document.write('*')
+            }else if (i === 7 && j === 1 || i === 7 && j === 55) {
+                document.write('*')
+            }else if (i === 9 && j === 3 || i === 9 && j === 53) {
+                document.write('*')
+            }else if (i === 10 && j === 4 || i === 10 && j === 52) {
+                document.write('*')
+            }else if (i === 11 && j === 5 || i === 11 && j === 51) {
+                document.write('*')
+            }else if (i === 13 && j === 8 || i === 13 && j === 48) {
+                document.write('*')
+            }else if (i === 14 && j === 10 || i === 14 && j === 46) {
+                document.write('*')
+            }else if (i === 16 && j === 13 || i === 16 && j === 42) {
+                document.write('*')
+            }else if (i === 18 && j === 20 || i === 18 && j === 37) {
+                document.write('*')
+            }
+            else {
+                document.write('&nbsp;&nbsp;')
+            }
+        }
+        document.write('<br/>')
+    }
+
+
+</script>
+
+</body>
+</html>
