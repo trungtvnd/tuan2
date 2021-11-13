@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: url("logo.png");
+        }
+    </style>
+</head>
+<body>
+<audio style="position: absolute; top: 520px" controls="controls" autoplay >
+    <source src="nhacnen.mp3" style="width: 10%">
+</audio>
+
+<h1 style="margin-top: 250px; margin-left: 530px; color: red"><b> GUESS THE NUMBER </b></h1>
+<input onmouseover="this.style.background='red'" onmouseout="this.style.background='white'" type="button" value="Click to Play" style="position: absolute; top: 350px; left: 620px; width:10%; color: blue " onclick="playGame()">
+<audio id="claphand" src=""></audio>
+<script>
+    let audio = new Audio('votay.mp3')
+    let audio1 = new Audio('traloisai.mp3')
+
+    function playGame() {
+        if (confirm('Bạn muốn chọn khoảng để đoán chứ?')) {
+            a = +prompt('From:')
+            b = +prompt('To:')
+        }
+        choosenumber()
+
+        function choosenumber() {
+            if (a === b) {
+                alert('Hai số bạn nhập trùng nhau. Bạn vui lòng nhập số khác')
+            } else if (a > b) {
+                alert('Bạn vui lòng nhập từ bé đến lớn')
+            } else {
+                guess = +prompt('Bạn đoán được số nào nhỉ? Hãy nhập nó vào đây đi')
+            }
+            if (guess === Math.floor(Math.random() * (b - a + 1)) + a) {
+                alert('Bạn đã đoán đúng')
+                audio.play()
+            } else {
+                alert('Bạn đã đoán sai')
+                alert('Hãy chơi lại nhé')
+                audio1.play()
+            }
+        }
+
+
+    }
+
+
+</script>
+
+</body>
+</html>
